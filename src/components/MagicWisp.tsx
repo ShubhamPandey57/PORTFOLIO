@@ -9,13 +9,17 @@ export default function MagicWisp() {
   const [clickEffect, setClickEffect] = useState(false);
   const [hoverType, setHoverType] = useState<"default" | "gold" | "emerald">("default");
 
-  // Motion values for smooth cursor tracking
+  // Motion values for smooth cursor tracking (declared unconditionally at top)
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
+  const innerX = useMotionValue(-100);
+  const innerY = useMotionValue(-100);
 
   const springConfig = { damping: 40, stiffness: 400, mass: 0.4 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
+  const innerXSpring = useSpring(innerX, springConfig);
+  const innerYSpring = useSpring(innerY, springConfig);
 
   useEffect(() => {
     // Check if device supports hover/coarse pointer (touchscreen check)
@@ -27,6 +31,8 @@ export default function MagicWisp() {
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
+      innerX.set(e.clientX - 4); // Centered relative to w-2 (8px) wisp seed
+      innerY.set(e.clientY - 4);
     };
 
     const handleMouseOver = (e: MouseEvent) => {
@@ -71,7 +77,7 @@ export default function MagicWisp() {
       window.removeEventListener("mouseover", handleMouseOver);
       window.removeEventListener("mousedown", handleMouseDown);
     };
-  }, [cursorX, cursorY]);
+  }, [cursorX, cursorY, innerX, innerY]);
 
   if (!isVisible) return null;
 
@@ -120,15 +126,12 @@ export default function MagicWisp() {
       <motion.div
         className="fixed top-0 left-0 w-2 h-2 rounded-full pointer-events-none z-50"
         style={{
-          // Follow cursor spring but centered relative to the 8px width
-          x: useSpring(useMotionValue(0), springConfig),
-          y: useSpring(useMotionValue(0), springConfig),
+          x: innerXSpring,
+          y: innerYSpring,
           background: hoverType === "gold" ? "#D9B44A" : hoverType === "emerald" ? "#5BE7C4" : "#6D5DF6",
           boxShadow: `0 0 8px ${hoverType === "gold" ? "#D9B44A" : hoverType === "emerald" ? "#5BE7C4" : "#6D5DF6"}`,
         }}
         animate={{
-          x: cursorXSpring.get() + 12,
-          y: cursorYSpring.get() + 12,
           scale: clickEffect ? 1.5 : isHovered ? 0.5 : 1,
         }}
       />
