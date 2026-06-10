@@ -45,7 +45,7 @@ const milestones: Milestone[] = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 bg-[#0B1020]/45">
+    <section id="about" className="relative py-24 section-backdrop">
       {/* Visual top border dividing sections */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#6D5DF6]/15 to-transparent" />
 

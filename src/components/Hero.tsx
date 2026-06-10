@@ -19,12 +19,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-day-night-transition"
+      className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden hero-transparent"
     >
-      {/* Background ambient light blobs */}
-      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[35vw] h-[35vw] rounded-full bg-[#6D5DF6]/10 blur-[120px] pointer-events-none animate-pulse-slow" />
-      <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-[30vw] h-[30vw] rounded-full bg-[#5BE7C4]/5 blur-[100px] pointer-events-none animate-pulse-slow" />
-      <div className="absolute top-1/2 right-1/3 w-[25vw] h-[25vw] rounded-full bg-[#D9B44A]/5 blur-[110px] pointer-events-none animate-pulse-slow" />
+      {/* Subtle readability scrim behind hero content */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0B1020]/20 via-transparent to-[#0B1020]/30 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-center relative z-20">
         
@@ -101,7 +99,7 @@ export default function Hero() {
                 src="/avatar.png"
                 alt="Frieren"
                 fill
-                priority
+                preload
                 sizes="(max-width: 768px) 256px, 288px"
                 className="object-cover"
               />

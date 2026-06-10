@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Cinzel } from "next/font/google";
 import "./globals.css";
+import ParallaxBackground from "@/components/ParallaxBackground";
 import CanvasParticles from "@/components/CanvasParticles";
 import MagicWisp from "@/components/MagicWisp";
 
@@ -34,6 +35,9 @@ export default function RootLayout({
       className={`${inter.variable} ${cinzel.variable} scroll-smooth`}
     >
       <body className="font-sans antialiased text-[#DCE3F0] bg-[#0B1020] min-h-screen relative overflow-x-hidden selection:bg-[#6D5DF6]/30 selection:text-[#5BE7C4]">
+        {/* Fantasy Landscape Parallax Background */}
+        <ParallaxBackground />
+
         {/* Particle and Wisp effects */}
         <CanvasParticles />
         <MagicWisp />
@@ -46,3 +50,4 @@ export default function RootLayout({
     </html>
   );
 }
+

@@ -109,7 +109,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="relative py-24 bg-[#0B1020]/45">
+    <section id="projects" className="relative py-24 section-backdrop">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#6D5DF6]/15 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-20">

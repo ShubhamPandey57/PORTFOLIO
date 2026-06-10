@@ -54,7 +54,7 @@ const experienceData: Position[] = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-24 bg-day-night-transition">
+    <section id="experience" className="relative py-24 section-backdrop">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#D9B44A]/15 to-transparent" />
 
       <div className="max-w-4xl mx-auto px-6 relative z-20">

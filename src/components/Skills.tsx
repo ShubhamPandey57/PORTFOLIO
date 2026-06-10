@@ -100,7 +100,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="relative py-24 bg-day-night-transition">
+    <section id="skills" className="relative py-24 section-backdrop">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#5BE7C4]/15 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-20">

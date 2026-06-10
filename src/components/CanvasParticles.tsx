@@ -35,10 +35,11 @@ export default function CanvasParticles() {
     };
 
     const colors = [
-      "rgba(109, 93, 246, 0.4)", // Violet
-      "rgba(91, 231, 196, 0.45)", // Emerald
-      "rgba(217, 180, 74, 0.4)",  // Gold
-      "rgba(220, 227, 240, 0.3)",  // Silver
+      "rgba(255, 248, 220, 0.35)", // Warm sunlight mote
+      "rgba(217, 180, 74, 0.3)",   // Gold
+      "rgba(91, 231, 196, 0.3)",   // Emerald
+      "rgba(186, 230, 180, 0.25)", // Soft green (landscape harmony)
+      "rgba(109, 93, 246, 0.25)",  // Violet (subtle)
     ];
 
     const resizeCanvas = () => {
