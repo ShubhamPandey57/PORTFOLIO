@@ -104,7 +104,7 @@ export default function Navbar() {
                     scrollTo(id);
                   }}
                   className={`relative font-sans text-sm tracking-[1.5px] uppercase transition-colors duration-300 hover:text-[#D9B44A] ${
-                    isActive ? "text-[#5BE7C4]" : "text-[#DCE3F0]/70"
+                    isActive ? "text-[#5BE7C5]" : "text-[#DCE3F0]/70"
                   }`}
                 >
                   {item.name}
