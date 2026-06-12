@@ -112,7 +112,7 @@ export default function Navbar() {
                     <motion.span
                       layoutId="activeIndicator"
                       className="absolute -bottom-1.5 left-0 w-full h-[2px] bg-gradient-to-r from-[#5BE7C4] to-[#6D5DF6] rounded-full"
-                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      transition={{ type: "spring", stiffness: 360, damping: 30 }}
                     />
                   )}
                 </a>
