@@ -126,7 +126,7 @@ export default function Navbar() {
             className="md:hidden p-2 rounded-md text-[#DCE3F0]/80 hover:text-[#5BE7C4] transition-colors focus:outline-none"
             aria-label="Toggle navigation menu"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="w-6 h-5" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </motion.nav>
