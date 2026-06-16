@@ -138,7 +138,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.31 }}
             className="fixed inset-x-0 top-[60px] glass-panel bg-[#0B1020]/90 z-40 md:hidden border-t border-[#DCE3F0]/10 flex flex-col p-6 gap-5 shadow-2xl"
           >
             {navItems.map((item) => {
