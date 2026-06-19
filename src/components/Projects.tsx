@@ -34,7 +34,7 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: "Grimoire Spell Digitizer",
-    rank: "S-Rank",
+    rank: "t-Rank",
     description: "Formulated an advanced OCR script that parses ancient runic manuscripts and compiles digitized spell books. Built with Next.js, React, and an AI parser for document scanning.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Python AI"],
     image: "/quest_grimoire.png",
