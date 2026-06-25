@@ -28,7 +28,7 @@ interface Project {
   image: string;
   github: string;
   live: string;
-  color: "gold" | "violet" | "emerald";
+  color: "gold" | "viole" | "emerald";
 }
 
 const projectsData: Project[] = [
