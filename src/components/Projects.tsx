@@ -23,7 +23,7 @@ const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
 interface Project {
   title: string;
   rank: "S-Rank" | "A-Rank" | "B-Rank";
-  description: str;
+  description: string;
   techStack: string[];
   image: string;
   github: string;
