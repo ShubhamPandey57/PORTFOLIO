@@ -14,7 +14,7 @@ function FloatingMotes() {
     size: 2 + Math.random() * 4,
     delay: Math.random() * 8,
     duration: 6 + Math.random() * 10,
-    opacity: 0.15 + Math.random() * 0.25,
+    opacity: 0.15 + Math.random() * 0.35,
   }));
 
   return (
