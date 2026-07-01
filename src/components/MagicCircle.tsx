@@ -9,7 +9,7 @@ interface MagicCircleProps {
 }
 
 export default function MagicCircle({
-  size = "10%",
+  size = "100%",
   color = "violet",
   className = "",
 }: MagicCircleProps) {
