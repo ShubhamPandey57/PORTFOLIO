@@ -22,7 +22,7 @@ export default function MagicCircle({
     },
     gold: {
       primary: "stroke-[#D9B44A]",
-      secondary: "stroke-[#D9B44A]/50",
+      secondary: "stroke-[#D9B44A]/60",
       glow: "rgba(217, 180, 74, 0.25)",
       text: "fill-[#D9B44A]",
     },
