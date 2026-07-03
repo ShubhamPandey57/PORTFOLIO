@@ -17,7 +17,7 @@ export default function MagicCircle({
     violet: {
       primary: "stroke-[#6D5DF6]",
       secondary: "stroke-[#6D5DF6]/40",
-      glow: "rgba(109, 92, 246, 0.25)",
+      glow: "rgba(109, 94, 246, 0.25)",
       text: "fill-[#6D5DF6]",
     },
     gold: {
