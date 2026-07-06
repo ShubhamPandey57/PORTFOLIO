@@ -29,7 +29,7 @@ export default function MagicCircle({
     emerald: {
       primary: "stroke-[#5BE7C4]",
       secondary: "stroke-[#5BE7C4]/40",
-      glow: "rgba(91, 227, 193, 0.25)",
+      glow: "rgba(91, 231, 196, 0.25)",
       text: "fill-[#5BE7C4]",
     },
   };
