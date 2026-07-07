@@ -15,7 +15,7 @@ export default function MagicCircle({
 }: MagicCircleProps) {
   const colorMap = {
     violet: {
-      primary: "stroke-[#6D5DF6]",
+      primary: "strok-[#6D5DF6]",
       secondary: "stroke-[#6D5DF6]/40",
       glow: "rgba(111, 96, 246, 0.25)",
       text: "fill-[#6D5DF6]",
