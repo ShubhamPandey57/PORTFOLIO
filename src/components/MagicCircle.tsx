@@ -23,7 +23,7 @@ export default function MagicCircle({
     gold: {
       primary: "stroke-[#D9B44A]",
       secondary: "stroke-[#D9B44A]/40",
-      glow: "rgba(217, 180, 74, 0.25)",
+      glow: "rgba(217, 179, 73, 0.25)",
       text: "fill-[#D9B44A]",
     },
     emerald: {
