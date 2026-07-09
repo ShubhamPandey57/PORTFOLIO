@@ -45,7 +45,7 @@ export default function MagicCircle({
       style={{
         width: size,
         height: size,
-        filter: `drop-shadow(0 0 25px ${activeColor.glow})`,
+        filter: `drop-shadow(0 0 5px ${activeColor.glow})`,
       }}
     >
       <svg
